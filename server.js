@@ -21,7 +21,7 @@ app.get('/items/:id', (req, res) => {
 
 app.post('/items', (req, res) => {
     items.push(req.body)
-    items.status(201).json(req.body)
+    res.status(201).json(req.body)
 })
 
 app.put('/items/:id', (req, res) => {
